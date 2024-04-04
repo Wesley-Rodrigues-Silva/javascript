@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(49, 109, 165);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: white;
+    width: 450px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.329);
+    margin: auto;
+    padding: 10px;   
+}
+
+div#msg {
+    text-align: center;
+    margin: 10px;
+}
+
+div#foto {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+}

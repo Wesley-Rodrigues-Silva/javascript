@@ -5,9 +5,13 @@ function contar() {
     var res = document.getElementById('res')
 
     if (ini.length == 0 || fim.length == 0 || passo.length == 0) {
-        window.alert('[ERRO] Faltam dados!')
+        res.innerHTML = 'Impossível contar!'
     } else {
-        res.innerHTML = 'Contando: '
+        res.innerHTML = 'Contando: <br> '
+        if (passo <=0) {
+            window.alert('Passo inválido! Considerando PASSO 1')
+            passo = 1
+        }
         // Contagem crescente
         if (ini < fim) {           
             for(var c = ini; c <= fim; c+= passo) {
